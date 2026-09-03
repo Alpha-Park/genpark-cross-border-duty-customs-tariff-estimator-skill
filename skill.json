@@ -1,0 +1,42 @@
+{
+  "name": "genpark-cross-border-duty-customs-tariff-estimator-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Cross-border landed cost customs duty and import VAT estimator based on harmonized system (HS) tariff classification.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "agent-commerce",
+  "tags": [
+    "cross-border",
+    "customs-duty",
+    "hs-tariff",
+    "bold-commerce",
+    "international-checkout"
+  ],
+  "inputs": {
+    "hs_tariff_code": {
+      "type": "string"
+    },
+    "declared_value_usd": {
+      "type": "number"
+    },
+    "destination_country": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "tariff_calculation_id": {
+      "type": "string"
+    },
+    "import_duty_usd": {
+      "type": "number"
+    },
+    "import_vat_usd": {
+      "type": "number"
+    },
+    "customs_breakdown_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
